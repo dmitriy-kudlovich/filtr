@@ -1,0 +1,49 @@
+footer {
+  margin: 0 auto;
+  padding: 50px 0;
+  background-color: #000;
+}
+
+.footer_content {
+  text-align: center;
+}
+
+.footer_contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .contact_link {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  font-size: 25px;
+  transition: 0.3s;
+  z-index: 2;
+
+  &:hover {
+    color: #c60f09;
+  }
+
+  &:active {
+    color: #c60f09;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.5s;
+    z-index: -1;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
