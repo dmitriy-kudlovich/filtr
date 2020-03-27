@@ -14,6 +14,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="./libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./libs/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
     <script src="https://use.fontawesome.com/c9d2c6fa6c.js"></script>
   </head>
   <body>
@@ -22,7 +30,7 @@
         <div class="nav">
           <a href="#!" class="nav_link">Главная</a>
           <a href="#about" class="nav_link">Информация о группе</a>
-          <a href="./photo.html" class="nav_link">Наши фото</a>
+          <a href="#photo" class="nav_link">Наши фото</a>
 
           <div class="nav_social">
             <a
@@ -31,10 +39,10 @@
               target="_blank"
               ><i class="fa fa-vk" aria-hidden="true"></i
             ></a>
-            <a href="tel:80000000" class="social-link"
+            <a href="tel:89675026840" class="social-link"
               ><i class="fa fa-phone" aria-hidden="true"></i
             ></a>
-            <a href="mailto:carnagery@mail.ru" class="social-link"
+            <a href="mailto:tsvelevs2009@rambler.ru" class="social-link"
               ><i class="fa fa-envelope" aria-hidden="true"></i
             ></a>
           </div>
@@ -153,17 +161,88 @@
         </div>
         <!-- //container -->
       </section>
+
+      <section class="photo_content" id="photo">
+        <div class="container">
+          <h2 class="section-heading">Наши фото</h2>
+          <div class="owl-carousel owl-theme carousel-wrapper">
+            <a
+              data-fancybox="gallery"
+              class="photo-frame"
+              href="./img/photos/1.jpg"
+            >
+              <img src="./img/photos/1.jpg" alt="photo1" class="live-photo" />
+            </a>
+
+            <a
+              data-fancybox="gallery"
+              class="photo-frame"
+              href="./img/photos/2.jpg"
+            >
+              <img src="./img/photos/2.jpg" alt="photo1" class="live-photo" />
+            </a>
+
+            <a
+              data-fancybox="gallery"
+              class="photo-frame"
+              href="./img/photos/3.jpg"
+            >
+              <img src="./img/photos/3.jpg" alt="photo1" class="live-photo" />
+            </a>
+
+            <a
+              data-fancybox="gallery"
+              class="photo-frame"
+              href="./img/photos/4.jpg"
+            >
+              <img src="./img/photos/4.jpg" alt="photo1" class="live-photo" />
+            </a>
+
+            <a
+              data-fancybox="gallery"
+              class="photo-frame"
+              href="./img/photos/5.jpg"
+            >
+              <img src="./img/photos/5.jpg" alt="photo1" class="live-photo" />
+            </a>
+
+            <a
+              data-fancybox="gallery"
+              class="photo-frame"
+              href="./img/photos/6.jpg"
+            >
+              <img src="./img/photos/6.jpg" alt="photo1" class="live-photo" />
+            </a>
+
+            <a
+              data-fancybox="gallery"
+              class="photo-frame"
+              href="./img/photos/7.jpg"
+            >
+              <img src="./img/photos/7.jpg" alt="photo1" class="live-photo" />
+            </a>
+
+            <a
+              data-fancybox="gallery"
+              class="photo-frame"
+              href="./img/photos/8.jpg"
+            >
+              <img src="./img/photos/8.jpg" alt="photo1" class="live-photo" />
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="container">
         <div class="footer_content">
           <h2 class="section-heading">Контакты</h2>
           <div class="footer_contacts">
-            <a href="tel:80000000" class="contact_link"
-              >Телефон: 8 (000) 000 00 00
+            <a href="tel:89675026840" class="contact_link"
+              >Телефон: 8 (967) 502 68 40 (Илья Цвелев)
             </a>
-            <a href="mailto:carnagery@mail.ru" class="contact_link"
-              >Почта: carnagery@mail.ru</a
+            <a href="mailto:tsvelevs2009@rambler.ru" class="contact_link"
+              >Почта: tsvelevs2009@rambler.ru</a
             >
             <div class="nav_social">
               <a
@@ -172,21 +251,26 @@
                 target="_blank"
                 ><i class="fa fa-vk" aria-hidden="true"></i
               ></a>
-              <a href="tel:80000000" class="social-link"
+              <a href="tel:89675026840" class="social-link"
                 ><i class="fa fa-phone" aria-hidden="true"></i
               ></a>
-              <a href="mailto:carnagery@mail.ru" class="social-link"
+              <a href="mailto:tsvelevs2009@rambler.ru" class="social-link"
                 ><i class="fa fa-envelope" aria-hidden="true"></i
               ></a>
             </div>
           </div>
           <!-- //footer_contacts -->
+          <div class="footer-img">
+            <img src="./img/main/mask.png" alt="mask" />
+          </div>
         </div>
         <!-- //footer_content -->
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="./libs/jquery/jquery-3.0.0.min.js"></script>
+    <script src="./libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

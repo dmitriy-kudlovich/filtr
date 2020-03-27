@@ -3,22 +3,11 @@
   text-align: center;
 }
 
-.photo_row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .photo-frame {
   display: block;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  width: 350px;
-  height: 250px;
 
-  &:nth-child(3) {
-    margin-right: 0;
-  }
+  width: 336px;
+  height: 236px;
 }
 
 .live-photo {
@@ -27,4 +16,102 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.carousel-wrapper {
+  position: relative;
+  padding: 0 60px;
+  align-items: center;
+}
+
+#photo .owl-dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: transparent;
+  background-image: url(../img/main/mask.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.3s;
+  margin: 5px;
+
+  &:hover {
+    background-color: #d6d6d6;
+  }
+}
+
+#photo .owl-dot.active {
+  background-color: #c60f09;
+}
+
+#photo .owl-dot span {
+  background-color: transparent;
+}
+
+.photo_content .carousel-wrapper .owl-dots .owl-dot:active,
+.photo_content .carousel-wrapper .owl-dots .owl-dot:focus {
+  outline: none;
+}
+
+#photo .owl-prev {
+  margin: 0;
+  position: absolute;
+  top: 93.5px;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #d6d6d6;
+  transition: 0.3s;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: #c60f09;
+  }
+}
+
+#photo .owl-next {
+  position: absolute;
+  top: 93.5px;
+  right: 0;
+  margin: 0;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #d6d6d6;
+  transition: 0.3s;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: #c60f09;
+  }
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+  color: #c60f09;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+#photo .owl-next:hover .fa-chevron-right {
+  transition: 0.3s;
+  color: #fff;
+}
+
+#photo .owl-prev:hover .fa-chevron-left {
+  transition: 0.3s;
+  color: #fff;
 }
