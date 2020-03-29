@@ -9,3 +9,12 @@ $(document).ready(function() {
     ]
   });
 });
+
+let hamburger = document.getElementById("hamburger");
+let navPanel = document.querySelector(".nav-panel");
+let header = document.querySelector(".header");
+
+hamburger.oncklick = function() {
+  navPanel.classList.add("nav-panel--active");
+  header.classList.add("overflow-hidden");
+};
