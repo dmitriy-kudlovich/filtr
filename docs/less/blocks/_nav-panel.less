@@ -47,13 +47,15 @@
 }
 
 .nav-panel {
-  position: absolute;
-  right: 100%;
+  display: block;
+  position: fixed;
+  right: -100%;
   top: 0;
+  padding: 30px 15px 0 15px;
   width: 320px;
   height: 100vh;
   background-color: #fff;
-  transition: 0.3s;
+  transition: 0.5s;
   z-index: 9;
 
   // Медиазапрос для планшетов и выше

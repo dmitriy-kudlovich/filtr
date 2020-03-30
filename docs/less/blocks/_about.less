@@ -1,7 +1,17 @@
 .about {
-  padding: 100px 0;
+  padding: 40px 0;
   background-color: #fff;
   text-align: center;
+
+  // Медиазапрос для планшетов и выше
+  @media (min-width: 798px) {
+    padding: 60px 0;
+  }
+
+  // Медиазапрос для десктопов
+  @media (min-width: 1230px) {
+    padding: 100px 0;
+  }
 }
 
 .about_content {
@@ -9,48 +19,89 @@
 }
 
 .about_story {
-  padding-bottom: 100px;
+  padding-bottom: 30px;
+
+  // Медиазапрос для планшетов и выше
+  @media (min-width: 798px) {
+    padding-bottom: 50px;
+  }
+
+  // Медиазапрос для десктопов
+  @media (min-width: 1230px) {
+    padding-bottom: 100px;
+  }
 }
 
 .text {
   text-align: left;
-  font-size: 36px;
+  font-size: 16px;
   margin-bottom: 15px;
 
   &:last-child {
     margin-bottom: 0;
   }
+
+  // Медиазапрос для планшетов и выше
+  @media (min-width: 798px) {
+    font-size: 28px;
+  }
+
+  // Медиазапрос для десктопов
+  @media (min-width: 1230px) {
+    font-size: 36px;
+  }
 }
 
 .about_people {
-  width: 850px;
   text-align: center;
   margin: 0 auto;
-  background-image: url(../img/main/main-bg.png);
-  background-size: 100%;
-  background-repeat: repeat;
-  background-position: center;
+
+  @media (min-width: 1230px) {
+    width: 850px;
+
+    background-image: url(../img/main/main-bg.png);
+    background-size: 100%;
+    background-repeat: repeat;
+    background-position: center;
+  }
 }
 
 .about_people_row {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: center;
   margin-bottom: 30px;
 
   &:last-child {
     margin-bottom: 0;
   }
 
-  &:nth-child(odd) {
-    flex-direction: row-reverse;
+  // Медиазапрос для планшетов и выше
+  @media (min-width: 798px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
   }
 }
 
 .about_people_photo {
-  width: 400px;
-  height: 500px;
+  width: 290px;
+  height: 390px;
+
+  // Медиазапрос для планшетов и выше
+  @media (min-width: 798px) {
+  }
+
+  // Медиазапрос для десктопов
+  @media (min-width: 1230px) {
+    width: 400px;
+    height: 500px;
+  }
 }
 
 .people_photo {
@@ -62,4 +113,23 @@
 
 .about_people_text {
   width: 400px;
+}
+
+.musician-name {
+  margin-bottom: 15px;
+  width: 290px;
+
+  &:last-child {
+    margin-bottom: 15px;
+  }
+
+  // Медиазапрос для планшетов и выше
+  @media (min-width: 798px) {
+    margin-bottom: 0;
+    width: unset;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }

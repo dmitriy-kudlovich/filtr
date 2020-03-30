@@ -12,9 +12,14 @@ $(document).ready(function() {
 
 let hamburger = document.getElementById("hamburger");
 let navPanel = document.querySelector(".nav-panel");
-let header = document.querySelector(".header");
+let body = document.querySelector("body");
 
-hamburger.oncklick = function() {
+hamburger.onclick = function() {
   navPanel.classList.add("nav-panel--active");
-  header.classList.add("overflow-hidden");
+  body.classList.add("overflow-hidden");
+};
+
+navPanel.onclick = function() {
+  navPanel.classList.remove("nav-panel--active");
+  body.classList.remove("overflow-hidden");
 };
