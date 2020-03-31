@@ -154,7 +154,7 @@ input {
   }
   .in-section-heading::after {
     bottom: 1px;
-    height: 70px;
+    height: 7px;
   }
 }
 .filtr-text {
@@ -443,8 +443,15 @@ input {
   }
 }
 .about_people_photo {
+  display: block;
   width: 290px;
   height: 390px;
+}
+@media (min-width: 798px) {
+  .about_people_photo {
+    width: 370px;
+    height: 470px;
+  }
 }
 @media (min-width: 1230px) {
   .about_people_photo {
@@ -461,11 +468,20 @@ input {
      object-position: center;
 }
 .about_people_text {
-  width: 400px;
+  width: 290px;
+}
+@media (min-width: 798px) {
+  .about_people_text {
+    width: 370px;
+  }
+}
+@media (min-width: 1230px) {
+  .about_people_text {
+    width: 400px;
+  }
 }
 .musician-name {
   margin-bottom: 15px;
-  width: 290px;
 }
 .musician-name:last-child {
   margin-bottom: 15px;
@@ -473,7 +489,6 @@ input {
 @media (min-width: 798px) {
   .musician-name {
     margin-bottom: 0;
-    width: unset;
   }
   .musician-name:last-child {
     margin-bottom: 0;
@@ -566,14 +581,6 @@ footer .contact_link:hover::after {
 }
 .photo-frame {
   display: block;
-  width: 95px;
-  height: 80px;
-}
-@media (min-width: 1230px) {
-  .photo-frame {
-    width: 336px;
-    height: 236px;
-  }
 }
 .live-photo {
   display: block;
@@ -598,8 +605,8 @@ footer .contact_link:hover::after {
   }
 }
 #photo .owl-dot {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   -webkit-border-radius: 100%;
      -moz-border-radius: 100%;
           border-radius: 100%;
@@ -760,14 +767,14 @@ footer .contact_link:hover::after {
   border-bottom: 5px solid #c60f09;
 }
 #hamburger:active {
-  border-top: 5px solid #d6d6d6;
-  border-bottom: 5px solid #d6d6d6;
+  border-top: 5px solid #c60f09;
+  border-bottom: 5px solid #c60f09;
 }
 #hamburger:hover .middle-line {
   background-color: #c60f09;
 }
 #hamburger:active .middle-line {
-  background-color: #d6d6d6;
+  background-color: #c60f09;
 }
 .middle-line {
   display: block;

@@ -2,11 +2,23 @@ $(document).ready(function() {
   $(".owl-carousel").owlCarousel({
     items: 3,
     nav: true,
-    margin: 10,
+    margin: 5,
     navText: [
       "<i class='fa fa-chevron-left'></i>",
       "<i class='fa fa-chevron-right'></i>"
-    ]
+    ],
+    stagePadding: 50,
+    responsiveClass: true,
+    loop: true,
+    dotsEach: 3,
+    responsive: {
+      0: {
+        items: 1
+      },
+      480: {
+        items: 3
+      }
+    }
   });
 });
 

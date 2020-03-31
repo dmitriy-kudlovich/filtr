@@ -90,11 +90,14 @@
 }
 
 .about_people_photo {
+  display: block;
   width: 290px;
   height: 390px;
 
   // Медиазапрос для планшетов и выше
   @media (min-width: 798px) {
+    width: 370px;
+    height: 470px;
   }
 
   // Медиазапрос для десктопов
@@ -112,12 +115,21 @@
 }
 
 .about_people_text {
-  width: 400px;
+  width: 290px;
+
+  // Медиазапрос для планшетов и выше
+  @media (min-width: 798px) {
+    width: 370px;
+  }
+
+  // Медиазапрос для десктопов
+  @media (min-width: 1230px) {
+    width: 400px;
+  }
 }
 
 .musician-name {
   margin-bottom: 15px;
-  width: 290px;
 
   &:last-child {
     margin-bottom: 15px;
@@ -126,7 +138,6 @@
   // Медиазапрос для планшетов и выше
   @media (min-width: 798px) {
     margin-bottom: 0;
-    width: unset;
 
     &:last-child {
       margin-bottom: 0;
