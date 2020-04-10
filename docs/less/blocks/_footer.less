@@ -10,20 +10,34 @@ footer {
 
 .footer-img {
   margin: 0 auto;
+
   width: 200px;
   height: 200px;
 }
 
+#mask-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .footer_contacts {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+
+  @media (min-width: 1230px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 footer .contact_link {
   position: relative;
   display: inline-block;
+  margin-bottom: 40px;
   color: #fff;
   font-size: 25px;
   transition: 0.3s;
@@ -51,5 +65,18 @@ footer .contact_link {
 
   &:hover::after {
     width: 100%;
+  }
+
+  @media (min-width: 1230px) {
+    margin-bottom: unset;
+  }
+}
+
+.footer .break {
+  display: inline-block;
+  font-size: 0;
+
+  @media (min-width: 1230px) {
+    display: none;
   }
 }
