@@ -25,6 +25,7 @@
   height: 30px;
   border-top: 5px solid #fff;
   border-bottom: 5px solid #fff;
+  transition: 0.3s;
   cursor: pointer;
   z-index: 5;
 
@@ -52,6 +53,7 @@
   width: 100%;
   height: 5px;
   background-color: #fff;
+  transition: 0.3s;
 }
 
 .nav-panel {
@@ -87,9 +89,14 @@
   width: 30px;
   height: 30px;
 
+  cursor: pointer;
+
   &:active .close-upstairs,
-  &:active .close-downstairs {
+  &:active .close-downstairs,
+  &:hover .close-upstairs,
+  &:hover .close-downstairs {
     background-color: #c60f09;
+    transition: 0.3s;
   }
 }
 
